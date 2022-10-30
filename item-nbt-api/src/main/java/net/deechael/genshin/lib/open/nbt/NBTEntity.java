@@ -36,7 +36,7 @@ public class NBTEntity extends NBTCompound {
     }
 
     @Override
-    protected void setCompound(Object compound) {
+    public void setCompound(Object compound) {
         if (!Bukkit.isPrimaryThread()) throw new NbtApiException("Entity NBT needs to be accessed sync!");
         NBTReflectionUtil.setEntityNBTTag(compound, NBTReflectionUtil.getNMSEntity(ent));
     }
