@@ -2,6 +2,5 @@ rootProject.name = 'item-nbt-parent'
 
 include 'item-nbt-api'
 include 'item-nbt-plugin'
-include 'mappings-parser'
 include 'nbt-data-api'
 include 'nbt-injector'
